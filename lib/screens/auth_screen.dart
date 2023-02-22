@@ -37,10 +37,12 @@ class _AuthScreenState extends State<AuthScreen> {
         Firestore.instance
             .collection('users')
             .document(authResult.user.uid)
-            .setData({
+            .setData(
+              {
           'email': email,
           'username': userName,
-        });
+        }
+        );
       }
     } on PlatformException catch (err) {
       var message = 'An error occured';

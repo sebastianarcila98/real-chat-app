@@ -40,6 +40,7 @@ class ChatScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Container(
+          padding: EdgeInsets.symmetric(vertical: 5),
           child: Column(
             children: [
               Expanded(

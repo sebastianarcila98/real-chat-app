@@ -33,6 +33,7 @@ class Messages extends StatelessWidget {
                     doc[index]['text'],
                     doc[index]['userId'] == snapshot.data.uid,
                     doc[index]['username'],
+                    doc[index]['userImg'],
                     key: ValueKey(doc[index].documentID),
                   ),
                 );

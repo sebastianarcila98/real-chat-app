@@ -24,6 +24,7 @@ class _NewMessageState extends State<NewMessage> {
       'createdAt': Timestamp.now(),
       'userId': _auth.uid,
       'username': userData['username'],
+      'userImg': userData['imgUrl'],
     });
   }
 
